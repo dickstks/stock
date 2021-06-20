@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>美國股票交易計算機 &#8211; 數碼電玩</title>
+<meta name='robots' content='max-image-preview:large' />
+<script>window._wca = window._wca || [];</script>
+<link rel='dns-prefetch' href='//www.digigamings.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//i1.wp.com' />
+<link rel='dns-prefetch' href='//i2.wp.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+
+
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://c0.wp.com/c/5.7.2/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='wc-block-vendors-style-css' href='https://c0.wp.com/p/woocommerce/4.9.1/packages/woocommerce-blocks/build/vendors-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='https://c0.wp.com/p/woocommerce/4.9.1/packages/woocommerce-blocks/build/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://c0.wp.com/p/woocommerce/4.9.1/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+<style id='woocommerce-layout-inline-css' type='text/css'>
+
+	.infinite-scroll .woocommerce-pagination {
+		display: none;
+	}
+</style>
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://c0.wp.com/p/woocommerce/4.9.1/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://c0.wp.com/p/woocommerce/4.9.1/assets/css/woocommerce.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='neve-woocommerce-css' href='https://www.digigamings.com/wp-content/themes/neve/assets/css/woocommerce.min.css?ver=2.10.1' type='text/css' media='all' />
+<link rel='stylesheet' id='neve-style-css' href='https://www.digigamings.com/wp-content/themes/neve/style.min.css?ver=2.10.1' type='text/css' media='all' />
+<style id='neve-style-inline-css' type='text/css'>
+.header-menu-sidebar-inner li.menu-item-nav-search { display: none; }
+ .container{ max-width: 748px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .single-product .alignfull > [class*="__inner-container"], .single-product .alignwide > [class*="__inner-container"]{ max-width:718px } .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link ,.woocommerce *:not(.woocommerce-mini-cart__buttons) > a.button, .woocommerce *:not(.woocommerce-mini-cart__buttons) > .button:not(.nv-sidebar-toggle):not(.nv-close-cart-sidebar):not([name="apply_coupon"]):not(.more-details):not(.checkout-button), .woocommerce a.button.alt, .woocommerce a.button.button-primary, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce a.button.add_to_cart, .woocommerce a.product_type_grouped, .woocommerce a.product_type_external, .woocommerce a.product_type_variable, .woocommerce button.button.alt, .woocommerce button.button.alt.single_add_to_cart_button.disabled, .woocommerce button.button.alt.single_add_to_cart_button, .woocommerce .actions > button[type=submit], .woocommerce button#place_order, .woocommerce .return-to-shop > .button, .button.woocommerce-form-login__submit,.woocommerce #review_form #respond input#submit, .woocommerce-cart .woocommerce .wc-proceed-to-checkout > a.button.checkout-button, .woocommerce-checkout #payment .place-order button#place_order, .woocommerce-account.woocommerce-edit-account .woocommerce .woocommerce-MyAccount-content p > button[type="submit"][name="save_account_details"].woocommerce-Button.button, .wc-block-product-search .wc-block-product-search__button:not(:disabled):not([aria-disabled=true]), form input[type="submit"], form button[type="submit"], #comments input[type="submit"]{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px;border:none;border-width:1px 1px 1px 1px; } .button.button-primary:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover, .wp-block-button.is-style-primary .wp-block-button__link:hover, .wc-block-grid .wp-block-button .wp-block-button__link:hover ,.woocommerce *:not(.woocommerce-mini-cart__buttons) > a.button:hover, .woocommerce *:not(.woocommerce-mini-cart__buttons) > .button:not(.nv-sidebar-toggle):not(.nv-close-cart-sidebar):not([name="apply_coupon"]):not(.more-details):not(.checkout-button):hover, .woocommerce a.button.alt:hover, .woocommerce a.button.button-primary:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover, .woocommerce a.button.add_to_cart:hover, .woocommerce a.product_type_grouped:hover, .woocommerce a.product_type_external:hover, .woocommerce a.product_type_variable:hover, .woocommerce button.button.alt.single_add_to_cart_button.disabled:hover, .woocommerce button.button.alt.single_add_to_cart_button:hover, .woocommerce .actions > button[type=submit]:hover, .woocommerce .return-to-shop > .button:hover, .button.woocommerce-form-login__submit:hover,.woocommerce #review_form #respond input#submit:hover, .woocommerce a.button.checkout-button:hover, .woocommerce button#place_order:hover, .woocommerce-account.woocommerce-edit-account .woocommerce .woocommerce-MyAccount-content p > button[type="submit"][name="save_account_details"].woocommerce-Button.button:hover, .wc-block-product-search .wc-block-product-search__button:not(:disabled):not([aria-disabled=true]):hover, form input[type="submit"]:hover, form button[type="submit"]:hover, #comments input[type="submit"]:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary:not(.secondary-default), .wp-block-button.is-style-secondary .wp-block-button__link, .button.button-secondary.secondary-default{ background-color: rgba(0,0,0,0);color: var(--nv-text-color);border-radius:3px;border:1px solid;border-width:1px 1px 1px 1px; } .button.button-secondary:not(.secondary-default):hover, .wp-block-button.is-style-secondary .wp-block-button__link:hover, .button.button-secondary.secondary-default:hover{ background-color: rgba(0,0,0,0);color: var(--nv-text-color); } .woocommerce-mini-cart__buttons .button.checkout{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px;border:none;border-width:1px 1px 1px 1px; } .woocommerce-mini-cart__buttons .button.checkout:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .woocommerce .woocommerce-mini-cart__buttons.buttons a.button.wc-forward:not(.checkout){ color: var(--nv-text-color);border-radius:3px;border:1px solid;border-width:1px 1px 1px 1px; } .woocommerce .woocommerce-mini-cart__buttons.buttons a.button.wc-forward:not(.checkout):hover{ color: var(--nv-text-color); } form:not([role="search"]):not(.woocommerce-cart-form):not(.woocommerce-ordering):not(.cart) input:read-write:not(#coupon_code), form textarea, form select, .woocommerce-page .select2{ margin-bottom: 10px; } form input:read-write, form textarea, form select, form select option, form.wp-block-search input.wp-block-search__input, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-page .select2-container--default .select2-selection--single, .woocommerce-page .woocommerce form .form-row input.input-text, .woocommerce-page .woocommerce form .form-row textarea, .wc-block-product-search form input.wc-block-product-search__field{ color: var(--nv-text-color); } form label, .wpforms-container .wpforms-field-label, .woocommerce form .form-row label{ margin-bottom: 10px; } form.search-form input:read-write, form.woocommerce-product-search input[type="search"]{ padding-right:45px !important; } .header-main-inner,.header-main-inner a:not(.button),.header-main-inner .navbar-toggle{ color: #e7e7e7; } .header-main-inner .nv-icon svg,.header-main-inner .nv-contact-list svg{ fill: #e7e7e7; } .header-main-inner .icon-bar{ background-color: #e7e7e7; } .hfg_header .header-main-inner .nav-ul .sub-menu{ background-color: #000000; } .hfg_header .header-main-inner{ background-color: #000000; } .header-menu-sidebar .header-menu-sidebar-bg,.header-menu-sidebar .header-menu-sidebar-bg a:not(.button),.header-menu-sidebar .header-menu-sidebar-bg .navbar-toggle{ color: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .nv-icon svg,.header-menu-sidebar .header-menu-sidebar-bg .nv-contact-list svg{ fill: var(--nv-text-color); } .header-menu-sidebar .header-menu-sidebar-bg .icon-bar{ background-color: var(--nv-text-color); } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg .nav-ul .sub-menu{ background-color: #000000; } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg{ background-color: #000000; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 61px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .neve-mm-heading span,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret{ color: #bdbdbd; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:after,.builder-item--primary-menu .nav-menu-primary > .nav-ul li > .has-caret > a:after{ background-color: #36adfd; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item):hover > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret{ color: #36adfd; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret svg{ fill: #36adfd; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > .has-caret > a{ color: #36adfd; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > .has-caret svg{ fill: #36adfd; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 500; text-transform: none; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--header_search > .search-field form input[type=submit],.builder-item--header_search > .search-field form .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search > .search-field form input[type=search]{ height: 40px; font-size: 14px; padding-right:45px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px; } .builder-item--header_search > .search-field form .nv-search-icon-wrap .nv-icon svg{ width: 14px;height: 14px; } .builder-item--header_search > .search-field form{ padding:0px 0px 0px 0px; } .builder-item--header_search{ margin:0px 0px 0px 0px; } @media(min-width: 576px){ .container{ max-width: 992px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .single-product .alignfull > [class*="__inner-container"], .single-product .alignwide > [class*="__inner-container"]{ max-width:962px } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 92px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--header_search > .search-field form input[type=submit],.builder-item--header_search > .search-field form .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search > .search-field form input[type=search]{ height: 40px; font-size: 14px; padding-right:45px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px; } .builder-item--header_search > .search-field form .nv-search-icon-wrap .nv-icon svg{ width: 14px;height: 14px; } .builder-item--header_search > .search-field form{ padding:0px 0px 0px 0px; } .builder-item--header_search{ margin:0px 0px 0px 0px; } }@media(min-width: 960px){ .container{ max-width: 1170px; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .single-product .neve-main > .shop-container .nv-shop.col{ max-width: 70%; } .single-product .alignfull > [class*="__inner-container"], .single-product .alignwide > [class*="__inner-container"]{ max-width:789px } .single-product .container-fluid .alignfull > [class*="__inner-container"], .single-product .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .single-product .neve-main > .shop-container .nv-sidebar-wrap{ max-width: 30%; } .header-main-inner{ height:126px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 74px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:32px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after{ left:-16px;right:-16px } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 32px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1.3em; line-height: 1.6em; letter-spacing: 0px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1.3em;height: 1.3em; } .builder-item--header_search > .search-field form input[type=submit],.builder-item--header_search > .search-field form .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search > .search-field form input[type=search]{ height: 40px; font-size: 14px; padding-right:45px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px; } .builder-item--header_search > .search-field form .nv-search-icon-wrap .nv-icon svg{ width: 14px;height: 14px; } .builder-item--header_search > .search-field form{ padding:0px 0px 0px 0px; } .builder-item--header_search{ margin:0px 0px 0px 0px; } }.nv-content-wrap .elementor a:not(.button):not(.wp-block-file__button){ text-decoration: none; }:root{--nv-primary-accent:#0366d6;--nv-secondary-accent:#0e509a;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#393939;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
+:root{--e-global-color-nvprimaryaccent:#0366d6;--e-global-color-nvsecondaryaccent:#0e509a;--e-global-color-nvsitebg:#ffffff;--e-global-color-nvlightbg:#ededed;--e-global-color-nvdarkbg:#14171c;--e-global-color-nvtextcolor:#393939;--e-global-color-nvtextdarkbg:#ffffff;--e-global-color-nvc1:#77b978;--e-global-color-nvc2:#f37262;}
+ #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .alignwide > [class*="__inner-container"]{ max-width: 718px; } @media(min-width: 576px){ #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .alignwide > [class*="__inner-container"]{ max-width: 962px; } } @media(min-width: 960px) { #content.neve-main .container .alignfull > [class*="__inner-container"],#content.neve-main .container .alignwide > [class*="__inner-container"]{ max-width: 1140px; } #content.neve-main > .container > .row > .col{ max-width: 100%; } #content.neve-main > .container > .row > .nv-sidebar-wrap, #content.neve-main > .container > .row > .nv-sidebar-wrap.shop-sidebar { max-width: 0%; } } 
+</style>
+<link rel='stylesheet' id='jetpack_css-css' href='https://c0.wp.com/p/jetpack/9.4.2/css/jetpack.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://c0.wp.com/c/5.7.2/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.7.2/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script defer type='text/javascript' src='https://stats.wp.com/s-202124.js' id='woocommerce-analytics-js'></script>
+<link rel="https://api.w.org/" href="https://www.digigamings.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.digigamings.com/wp-json/wp/v2/pages/197" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.digigamings.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.digigamings.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7.2" />
+<meta name="generator" content="WooCommerce 4.9.1" />
+<link rel="canonical" href="https://www.digigamings.com/us-stock-calculator/" />
+<link rel='shortlink' href='https://www.digigamings.com/?p=197' />
+<link rel="alternate" type="application/json+oembed" href="https://www.digigamings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.digigamings.com%2Fus-stock-calculator%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.digigamings.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.digigamings.com%2Fus-stock-calculator%2F&#038;format=xml" />
+<style type='text/css'>img#wpstats{display:none}</style> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<link rel="icon" href="https://www.digigamings.com/wp-content/uploads/2021/02/icon.ico" sizes="32x32" />
+<link rel="icon" href="https://www.digigamings.com/wp-content/uploads/2021/02/icon.ico" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.digigamings.com/wp-content/uploads/2021/02/icon.ico" />
+<meta name="msapplication-TileImage" content="https://www.digigamings.com/wp-content/uploads/2021/02/icon.ico" />
+<style type="text/css" id="wp-custom-css">
+			.site-title {font-size: 40px !important;}
+.nv-title-tagline-wrap small {font-size: 20px !important;}
+
+@media only screen and (max-width: 768px) {
+    .site-title {font-size: 25px !important;}
+
+}
+.woocommerce-ordering {
+  display: none;
+}
+.woocommerce-result-count {
+  display: none;
+}
+.woocommerce-loop-category__title .count{
+display: none !important;
+}
+.woocommerce .products .product .price
+{text-align:center}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+   text-align: center;
+}
+
+.header {
+	z-index: 99;
+}
+.nv-comment-content a, .nv-content-wrap a:not(.button):not(.wp-block-file__button) {
+    text-decoration: none;
+}
+.nv-meta-list {
+    display: none!important;
+}
+body.elementor-page-4828 h1.entry-title, .elementor-page-title {
+    display: block !important;
+}		</style>
+</head>
+<body data-rsssl=1 class="page-template-default page page-id-197 wp-custom-logo theme-neve woocommerce-no-js nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-kit-5" id="neve_body">
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+<div class="header--row-inner header-main-inner">
+<div class="container">
+<div class="row row--wrapper" data-section="hfg_header_layout_main">
+<div class="builder-item hfg-item-first col-8 mobile-left tablet-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+<div class="site-logo">
+<a class="brand" href="https://www.digigamings.com/" title="數碼電玩" aria-label="數碼電玩"><div class="title-with-logo"><img src="https://i1.wp.com/www.digigamings.com/wp-content/uploads/2021/01/icon2.png?fit=700%2C700&#038;ssl=1" alt=""><div class="nv-title-tagline-wrap"><p class="site-title">數碼電玩</p></div></div></a></div>
+</div>
+</div><div class="builder-item hfg-item-last col-4 mobile-right tablet-right"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+<button class="navbar-toggle" aria-label="
+			Navigation Menu			">
+<div class="bars">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</div>
+<span class="screen-reader-text">Toggle Navigation</span>
+</button>
+</div> 
+</div>
+</div> </div>
+</div>
+</div>
+</nav>
+<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel slide_left">
+<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+<div class="close-sidebar-panel navbar-toggle-wrapper">
+<button class="navbar-toggle active" aria-label="
+				Navigation Menu				">
+<div class="bars">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</div>
+<span class="screen-reader-text">
+Toggle Navigation </span>
+</button>
+</div>
+<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner ">
+<div class="builder-item hfg-item-first col-12 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--header_search" data-section="header_search" data-item-id="header_search">
+<div class="component-wrap search-field">
+<div class="widget widget-search" style="padding: 0;margin: 8px 2px;">
+<form role="search" method="get" class="search-form" action="https://www.digigamings.com/"><label><span class="screen-reader-text">Search for...</span><input type="search" class="search-field" placeholder="搜尋" value="" name="s"></label><input type="submit" class="search-submit" value="Search"><div class="nv-search-icon-wrap"><div class="nv-icon nv-search">
+<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z" /></svg>
+</div></div></form> </div>
+</div>
+</div>
+</div><div class="builder-item has-nav hfg-item-last col-12 mobile-left tablet-left desktop-right"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+<div class="nv-nav-wrap">
+<div role="navigation" class="style-plain nav-menu-primary" aria-label="Primary Menu">
+<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-239"><a href="https://www.digigamings.com/">主頁</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="https://www.digigamings.com/shop/">商店</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="https://www.digigamings.com/tools/">小工具</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="https://www.digigamings.com/free-game/">免費遊戲</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="https://www.digigamings.com/faq/">常見問題</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="https://www.digigamings.com/contact-us/">聯絡我們</a></li>
+</ul> </div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="header-menu-sidebar-overlay"></div>
+</div>
+</header>
+
+<main id="content" class="neve-main" role="main">
+<div class="container single-page-container">
+<div class="row">
+<div class="nv-single-page-wrap col">
+<div class="nv-page-title-wrap nv-big-title">
+<div class="nv-page-title ">
+<h1>Stock Profit Calculator</h1>
+</div>
+</div> 
+<div class="nv-content-wrap entry-content">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+      * {
+      box-sizing: border-box;
+      }
+      /* Create two equal columns that floats next to each other */
+      .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+      }
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+   </style>
+<style>
+      :root {
+      --white: #ffffff;
+      --light: #f0eff3;
+      --black: #000000;
+      --dark-blue: #1f2029;
+      --dark-light: #353746;
+      --red: #da2c4d;
+      --yellow: #f8ab37;
+      --grey: #ecedf3;
+      }
+      /* #Primary
+      ================================================== */
+      [type="checkbox"]:checked,
+      [type="checkbox"]:not(:checked),
+      [type="radio"]:checked,
+      [type="radio"]:not(:checked){
+      position: absolute;
+      left: -9999px;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      }
+      .checkbox:checked + label,
+      .checkbox:not(:checked) + label{
+      position: relative;
+      width: 70px;
+      display: inline-block;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      margin: 17px 0;
+      margin-top: 100px;
+      height: 6px;
+      border-radius: 4px;
+      background-image: linear-gradient(298deg, var(--red), var(--yellow));
+      z-index: 100 !important;
+      }
+      .checkbox:checked + label:before,
+      .checkbox:not(:checked) + label:before {
+      position: absolute;
+      font-family: 'unicons';
+      cursor: pointer;
+      top: -17px;
+      z-index: 2;
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+      }
+      .checkbox:not(:checked) + label:before {
+      content: '\eac1';
+      left: 0;
+      color: var(--grey);
+      background-color: var(--dark-light);
+      box-shadow: 0 4px 4px rgba(0,0,0,0.15), 0 0 0 1px rgba(26,53,71,0.07);
+      }
+      .checkbox:checked + label:before {
+      content: '\eb8f';
+      left: 30px;
+      color: var(--yellow);
+      background-color: var(--dark-blue);
+      box-shadow: 0 4px 4px rgba(26,53,71,0.25), 0 0 0 1px rgba(26,53,71,0.07);
+      }
+      .checkbox:checked ~ .section .container .row .col-12 p{
+      color: var(--dark-blue);
+      }
+      .checkbox-tools:checked + label,
+      .checkbox-tools:not(:checked) + label{
+      position: relative;
+      display: inline-block;
+      padding: 20px;
+      width: 110px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;	
+      color: var(--white);
+      -webkit-transition: all 300ms linear;
+      transition: all 300ms linear; 
+      }
+      .checkbox-tools:not(:checked) + label{
+      background-color: var(--dark-light);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      }
+      .checkbox-tools:checked + label{
+      background-color: transparent;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      .checkbox-tools:not(:checked) + label:hover{
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      .checkbox-tools:checked + label::before,
+      .checkbox-tools:not(:checked) + label::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background-image: linear-gradient(298deg, var(--red), var(--yellow));
+      z-index: -1;
+      }
+      .checkbox-tools:checked + label .uil,
+      .checkbox-tools:not(:checked) + label .uil{
+      font-size: 24px;
+      line-height: 24px;
+      display: block;
+      padding-bottom: 10px;
+      }
+      .checkbox:checked ~ .section .container .row .col-12 .checkbox-tools:not(:checked) + label{
+      background-color: var(--light);
+      color: var(--dark-blue);
+      box-shadow: 0 1x 4px 0 rgba(0, 0, 0, 0.05);
+      }
+   </style>
+<script>
+      function cal(){
+      var buy = document.getElementById("buy").value;
+      var sell = document.getElementById("sell").value;
+      var number = document.getElementById("number").value;
+      
+      
+      var first = 0.0000051;
+      var second = 0.000119;
+      sell = sell * number;
+      buy = buy * number;
+      
+      first = first * sell;
+      second = second * number;
+      
+      if (first < 0.01){first = 0.01;}
+      if (second < 0.01){second = 0.01;}
+      if (second > 5.95){second = 5.95;}
+      
+      var final = second + first;
+      
+      if (document.getElementById('cow').checked){
+      var trans_fee1 = number *  0.0049;
+      if (trans_fee1 < 0.99){trans_fee1 = 0.99;}
+      
+      var trans_fee2 = number *  0.005;
+      if (trans_fee2 < 1){trans_fee2 = 1;}
+      trans_fee1 = Number((Math.round(trans_fee1 * 100) / 100).toFixed(2));
+      trans_fee2 = Number((Math.round(trans_fee2 * 100) / 100).toFixed(2));
+      
+      cow_fee = trans_fee1 + trans_fee2;
+      var trade_fee = number * 0.003;
+      trade_fee = Number((Math.round(trade_fee * 100) / 100).toFixed(2));
+      buy = buy +  cow_fee + trade_fee;
+      sell = sell - cow_fee - trade_fee;
+      
+      }
+      
+      
+      var gain= sell - final - buy;
+      
+      var sell_total = sell - final;
+      sell_total = Number((Math.round(sell_total * 100) / 100).toFixed(2));
+      var sell_total1 = sell_total * 7.78;
+      sell_total1 = Number((Math.round(sell_total1 * 100) / 100).toFixed(2));
+      
+      gain = Number((Math.round(gain * 100) / 100).toFixed(2));
+      var gain1 = gain * 7.78;
+      gain1 = Number((Math.round(gain1 * 100) / 100).toFixed(2));
+      
+      
+      buy = Number((Math.round(buy * 100) / 100).toFixed(2));
+      var buy1 = buy*7.78;
+      buy1 = Number((Math.round(buy1 * 100) / 100).toFixed(2));
+      
+      
+      
+      var percent = gain1 / buy1;
+      
+      if (percent > 0){
+      document.getElementById("p1").style.color = "green"
+      }
+      if (percent < 0){
+      document.getElementById("p1").style.color = "red"
+      }
+      
+      percent = percent * 100;
+      percent = Number((Math.round(percent * 100) / 100).toFixed(2));
+      document.getElementById("p2").innerHTML = "Purchased for : "+ buy1+" HKD ("+ buy+" USD)";
+      document.getElementById("p3").innerHTML = "Sold for: "+ sell_total1 +" HKD ("+ sell_total +" USD)";
+      document.getElementById("p1").innerHTML = "Profit/Loss: "+gain1+" HKD ("+gain+" USD) ("+percent+"%)";}
+      
+      
+      
+   </script>
+</head>
+<body data-rsssl=1>
+<div class="row">
+<div class="column">
+<input class="checkbox-tools" type="radio" name="tools" id="sofi" checked onclick="cal();">
+<label class="for-checkbox-tools" for="sofi">
+1
+</label><input class="checkbox-tools" type="radio" name="tools" id="cow" onclick="cal();">
+<label class="for-checkbox-tools" for="cow">
+2
+</label>
+<form id="myForm">
+Shares: <input type="number" name="fname" id="number" min="0" oninput="cal()"><br><br>
+Buy: <input type="number" name="fname" id="buy" min="0" oninput="cal()"><br><br>
+Sell: <input type="number" name="fname" id="sell" min="0" oninput="cal()"><br><br>
+</form>
+</div>
+<script>
+         function cal_stock_number(){
+         var table = document.getElementById("123");
+         var number = "input"
+         var stock = "input"
+         var total_number = 0
+         var total_stock = 0
+          	//iterate trough rows
+         for (var i = 1; i<11; i+=2) {
+         number = "input" + i;
+         stock = "input" + (i+1);
+         if (document.getElementById(number).value == ""){
+         	continue;
+         }
+         else{
+         var number_value = document.getElementById(number).value;
+         
+         }
+         if (document.getElementById(stock).value == ""){
+         continue;
+         }
+         else{
+         var stock_value = document.getElementById(stock).value;
+         
+         }
+         total_number += Number(number_value);
+         total_stock += Number(stock_value)*Number(number_value);
+         
+         }
+         if (document.getElementById(stock).value !== null){
+         var average = total_stock / total_number;
+         average = Number(average.toFixed(2));
+         }
+         document.getElementById("hand").innerHTML ="總股數: "+total_number;
+         document.getElementById("stocks").innerHTML ="平均價: "+average;
+         
+         }
+      </script>
+<div class="column">
+
+</div>
+</div>
+<script>
+      if (document.getElementById('cow').checked){
+      	cal();
+      }
+      if (document.getElementById('sofi').checked){
+      	cal();
+      }
+      
+   </script>
+<h2>
+<p id="p2"></p>
+</h2>
+<h2>
+<p id="p3"></p>
+</h2>
+<h2>
+<p id="p1"></p>
+</h2>
+</br>
+Pegged: 1 USD = 7.78 HKD
+</br></br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7551600069759462" data-ad-slot="1546516857" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</body>
+</div> </div>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="site-footer">
+<div class="hfg_footer">
+</div>
+</footer>
+</div>
+<div id='fb-root'></div>
+<script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_HK/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+<div class='fb-customerchat' attribution='wordpress' attribution_version='1.8' page_id=1184313848310407>
+</div>
+<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})()
+	</script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/9.4.2/_inc/build/photon/photon.min.js' id='jetpack-photon-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/woocommerce/4.9.1/assets/js/jquery-blockui/jquery.blockUI.min.js' id='jquery-blockui-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/woocommerce/4.9.1/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://c0.wp.com/p/woocommerce/4.9.1/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_2f96bf87f4306990ddb4cbedfd7c512f","fragment_name":"wc_fragments_2f96bf87f4306990ddb4cbedfd7c512f","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://c0.wp.com/p/woocommerce/4.9.1/assets/js/frontend/cart-fragments.min.js' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-after'>
+		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+			var jetpackLazyImagesLoadEvent;
+			try {
+				jetpackLazyImagesLoadEvent = new Event( 'jetpack-lazy-images-load', {
+					bubbles: true,
+					cancelable: true
+				} );
+			} catch ( e ) {
+				jetpackLazyImagesLoadEvent = document.createEvent( 'Event' )
+				jetpackLazyImagesLoadEvent.initEvent( 'jetpack-lazy-images-load', true, true );
+			}
+			jQuery( 'body' ).get( 0 ).dispatchEvent( jetpackLazyImagesLoadEvent );
+		} );
+		
+</script>
+<script type='text/javascript' id='neve-script-js-extra'>
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"https:\/\/www.digigamings.com\/wp-admin\/admin-ajax.php","nonce":"cb64fc2f3b","isRTL":"","isCustomize":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.digigamings.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=2.10.1' id='neve-script-js' async></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.7.2/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
+<script type='text/javascript' id='prevent-xss-vulnerability-js-extra'>
+/* <![CDATA[ */
+var selfXss = {"message":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.digigamings.com/wp-content/plugins/prevent-xss-vulnerability/frontend/js/script-1.0.0.min.js?ver=5.7.2' id='prevent-xss-vulnerability-js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.7.2/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script src='https://stats.wp.com/e-202124.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.4.2',blog:'182956598',post:'197',tz:'8',srv:'www.digigamings.com'} ]);
+	_stq.push([ 'clickTrackerInit', '182956598', '197' ]);
+</script>
+</body>
+</html>
